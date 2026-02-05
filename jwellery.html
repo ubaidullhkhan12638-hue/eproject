@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <style>
+
+    .navbar-nav {
+      margin-left: AUTO;
+      color: white;
+      font-size: medium;
+      font-weight: bold;
+    }
+     .nav-link{
+         color: rgb(8, 6, 6);
+     }
+     .nav-link:hover{
+      background-color:rgb(20, 19, 19);
+      color: white;
+       border-radius: 999px; 
+  transition: all 0.3s ease;
+     }
+    .dropdown-menu{
+      background-color: lightgrey;
+    }
+    .dropdown-menu:hover{
+      color: white;
+      
+    }
+    body {
+        margin: 0;
+        font-family: "Arial", sans-serif;
+    }
+
+    .hero {
+        width: 100%;
+        height: 100vh; /* full screen */
+        background-image: url(/pic.html//jewwwwwwwwwwwww\,jpg.webp); /* <-- yahan apni image ka path */
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 80px;
+        box-sizing: border-box ;
+    }
+
+    .content {
+        text-align: left;
+        color: #000000;
+        background: (255, 255, 255, 0.6); /* optional light overlay */
+        padding: 30px 40px; 
+        font-weight: bolder;
+
+    }
+
+    .content small {
+        letter-spacing: 2px;
+        font-size: 14px;
+    }
+
+    .content h1 {
+        font-size: 48px;
+        margin: 10px 0 20px; 
+        
+    }
+
+    .btn {
+        text-decoration: none;
+        color:white;
+        font-size: 14px;
+        letter-spacing: 2px;
+        border-bottom: 1px solid #000;
+        padding-bottom: 5px;
+        background-color: black;
+    }
+    .nav-item{
+      color: white;
+    }
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flower-footer {
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    font-family: Arial, sans-serif;
+    color: #444;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.footer-box h2 {
+    color: #1a1818;
+    margin-bottom: 12px;
+}
+
+.footer-box h3 {
+    color: #0a090a;
+    margin-bottom: 10px;
+}
+
+.footer-box p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li {
+    margin-bottom: 8px;
+}
+
+.footer-box ul li a,
+.social-links a {
+    text-decoration: none;
+    color: #6a1b9a;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-box ul li a:hover,
+.social-links a:hover {
+    color: #d81b60;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.footer-bottom {
+    background-color: #f1eff0;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    color: #333;
+}
+.about-section {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.about-section h1 {
+    text-align: center;
+    color: #050505;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    color: #555;
+    line-height: 1.9;
+    font-size: 16px;
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.about-section span {
+    color: #000000;
+    font-weight: bold;
+}
+
+.about-section .ending {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+dy {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    padding: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 280px;
+    height: 420px; /* SAME SIZE */
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover; /* IMAGE LIKE PICTURE */
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: #000;
+}
+
+button {
+    background: #8b0000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #a30000;
+}
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f7f3ef;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left side */
+.image-box {
+  flex: 1;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right side */
+.content-box {
+  flex: 1;
+  background-color: #f7f3ef;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tag {
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.content-box h1 {
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-transform: lowercase;
+}
+
+.content-box p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 450px;
+}
+
+button {
+  width: 160px;
+  padding: 15px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+.btn-cart{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid CF">
+    <a class="navbar-brand" href="#">𝓗𝓸𝓾𝓼𝓮 𝓸𝓯 𝓕𝓵𝓸𝔀𝓮𝓻 </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="CONTACT.HTML">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="BOQUTES.HTML">BOUQUETS</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link" href="CONTACT.HTML">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="BOQUTES.HTML">BOUQUETS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="jwellery.html">JWELLERY</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            OCCASIONS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="birthday.html/birthday.html">Happy birthday</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="eid.html">Eid collection</a></li>
+             <li><a class="dropdown-item" href="fatherday.html">Father day</a></li>
+              <li><a class="dropdown-item" href="happyanvi.html">Happy anniversary</a></li>
+               <li><a class="dropdown-item" href="ramdan.html">Ramdan mubarak</a></li>
+          </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="hero"data-aos="zoom-in-up">
+  
+    <div class="content"data-aos="zoom-in-up">
+        <small></small>
+        <h1></h1>      
+    </div>
+</div> 
+<section class="about-section">
+
+    <p>
+        Welcome to <span>House of Flower</span> — jahan phool sirf phool nahi rehte, 
+        balkay feelings, emotions aur yaadein ban jaate hain.  
+        Humari website un logon ke liye hai jo apni khushi, pyaar aur special moments
+        ko kuch khaas banana chahte hain.
+    </p>
+
+    <p>
+        House of Flower aik aisi jagah hai jahan aapko har rang, har khushboo aur har 
+        design ka flower milta hai. Hum sirf flowers sell nahi karte, hum bouquets 
+        ko art ki tarah design karte hain — chahe wo birthdays ho, weddings ho, 
+        anniversaries ho ya koi surprise moment.
+    </p>
+
+    <p>
+        Hum professional <strong>flower decoration services</strong> bhi provide karte hain. 
+        Shaadi ho, engagement ho, mehndi ho ya koi private event — hum har jagah 
+        ko flowers se itna khoobsurat bana dete hain ke dekhne wala bas dekhte hi reh jata hai.
+        Har decoration fresh flowers, modern themes aur elegant designs ke saath ki jati hai.
+    </p>
+
+    <p>
+        Sirf flowers hi nahi, <strong>House of Flower</strong> par hum 
+        beautiful handmade <strong>bouquets</strong> aur stylish 
+        <strong>jewellery designs</strong> bhi banate hain.  
+        Humari jewellery classy, unique aur specially un logon ke liye hoti hai 
+        jo kuch different pehnna pasand karte hain.
+    </p>
+
+    <p>
+       
+    </p>
+
+    <p class="ending">
+        
+    </p>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="container"data-aos="zoom-out-down">
+    <!-- Left image -->
+    <div class="image-box">
+      <img src="/pic.html//immmmmmmmmmmmhhhhh,jpg.webp" alt="Pink Rose Bouquet">
+    </div>
+
+    <!-- Right content -->
+    <div class="content-box">
+      <span class="tag"></span>
+      <h1> 𝓯𝓵𝓸𝔀𝓮𝓻</h1>
+      <p>
+       Pink roses symbolize gratitude, admiration, and affection, making them a perfect choice to express appreciation and fondness for someone special. The different shades of pink can also convey various nuances of emotions, from sweetness to admiration. Lighter shades can convey gentleness and admiration, while deeper pinks may express gratitude and thankfulness.
+      
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1> 𝓳𝓮𝔀𝓮𝓵𝓮𝓻𝔂 </h1>
+
+
+
+
+
+
+<div class="product-grid">
+
+    <div class="card">
+        <img src="/pic.html//jwe2.png" alt="Dusky Romance">
+        <div class="card-body">
+            <h3>Dusky love</h3>
+            <p class="price">14,099 PKR</p>
+                        <button><a href="add.html" class="btn-cart">Add to Cart</a></button>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/pic.html//jwe3.png" alt="Rosy Plum">
+        <div class="card-body">
+            <h3>Rosy Plum</h3>
+            <p class="price">18,999 PKR</p>
+                        <button><a href="add.html" class="btn-cart">Add to Cart</a></button>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/pic.html//jwe4.png" alt="The Proposal">
+        <div class="card-body">
+            <h3>The Proposal</h3>
+            <p class="price">7,999 PKR</p>
+                        <button><a href="add.html" class="btn-cart">Add to Cart</a></button>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/pic.html//jwe5.png" alt="Ruby Reign">
+        <div class="card-body">
+            <h3>Ruby Reign</h3>
+            <p class="price">20,999 PKR</p>
+                        <button><a href="add.html" class="btn-cart">Add to Cart</a></button>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<h1></h1>
+
+
+
+
+<div class="product-grid">
+
+    <div class="card">
+        <img src="/pic.html//jwe6.png" alt="Dusky Romance">
+        <div class="card-body">
+            <h3>Dusky Romance</h3>
+            <p class="price">14,099 PKR</p>
+                        <button><a href="add.html" class="btn-cart">Add to Cart</a></button>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/pic.html//jwe7.png" alt="Rosy Plum">
+        <div class="card-body">
+            <h3>Rosy Plum</h3>
+            <p class="price">18,999 PKR</p>
+                        <button><a href="add.html" class="btn-cart">Add to Cart</a></button>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/pic.html//jwe8.png" alt="The Proposal">
+        <div class="card-body">
+            <h3>The Proposal</h3>
+            <p class="price">7,999 PKR</p>
+                        <button><a href="add.html" class="btn-cart">Add to Cart</a></button>
+
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="/pic.html//jwel1.png" alt="Ruby Reign">
+        <div class="card-body">
+            <h3>Ruby Reign</h3>
+            <p class="price">20,999 PKR</p>
+                        <button><a href="add.html" class="btn-cart">Add to Cart</a></button>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+</body>
+</html>
